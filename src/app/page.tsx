@@ -56,7 +56,7 @@ export default function Home() {
       title: "Cyber Security",
       items: [
         {
-          text: "Try Hack Me",
+          text: "Try Hack Me:",
           link: {
             url: "https://tryhackme.com/r/path/outline/webapppentesting?utm_source=cio&utm_medium=email&utm_campaign=webapppen_b2c",
             title: "Web Application Pentesting Path:"
