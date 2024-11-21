@@ -1,7 +1,5 @@
 'use client'
 
-import { useState } from 'react'
-import { Button } from "@/components/ui/button"
 import Image from 'next/image'
 import portfolio_image from '../../public/portfolio_image.png'
 import ProjectsSection from '@/components/ProjectsSection'
