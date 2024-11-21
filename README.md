@@ -63,6 +63,7 @@
 
 # Video walkthrough used for this
 - [Cursor AI & V0 Tutorial Series: Ultimate Workflow Part 2](https://www.youtube.com/watch?v=ZBEAaSFT6Go&ab_channel=RobShocks)
+- [Deploy a Next.js App to GitHub Pages](https://www.youtube.com/watch?v=mJuz45RXeXY&ab_channel=NLTech)
     
 
 
