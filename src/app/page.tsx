@@ -65,18 +65,18 @@ export default function Home() {
       ]  
     },
     {
-      title: "Front End Web Development",
-      items: [
-        {
-          text: "Building simple web front ends, including this portfolio, to deepen my understanding of front-end frameworks such as Next.js, React.js, and Vite."
-        }
-      ]
-    },
-    {
       title: "LLM Rag Implementations",
       items: [
         {
           text: "Testing out developing solutions with LLM's for RAG integration leveraging AWS Bedrock and enriching the LLM knowledge base with data from S3"
+        }
+      ]
+    },
+    {
+      title: "Full Stack Web Development",
+      items: [
+        {
+          text: "Building web front ends, including this portfolio, to deepen my understanding of front-end frameworks such as Next.js, React.js, and Vite. Along with leveraging FastAPI for my backend framework use cases"
         }
       ]
     }
