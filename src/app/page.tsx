@@ -15,7 +15,7 @@ export default function Home() {
       url: null
     },
     {
-      title: "AWS DataLake",
+      title: "AWS Data Lake",
       description: "AWS Data Lake Leveraging S3 and supporting technologies",
       content: "Developed a data lake solution leveraging AWS services via Lake Formation to include AWS Glue, AWS Athena and, AWS Quicksight. For a breakdown of this project please visit my GitHub repo",
       url: {
@@ -59,7 +59,7 @@ export default function Home() {
           text: "Try Hack Me:",
           link: {
             url: "https://tryhackme.com/r/path/outline/webapppentesting?utm_source=cio&utm_medium=email&utm_campaign=webapppen_b2c",
-            title: "Web Application Pentesting Path:"
+            title: "Web Application Pentesting Path"
           }
         }
       ]  
@@ -112,7 +112,7 @@ export default function Home() {
           <p className="mb-4">With over 12 years of experience in cyber security including Splunk, container security, cloud security, and, CI / CD security scanning. I have assisted multiple Fortune 500 companies and government agencies increase thier security posture and bring their security posture in line with industry standards.</p>
           <h3 className="text-2xl font-semibold mb-2 text-white">Core Skills</h3>
           <div className="grid grid-cols-2 md:grid-cols-3 gap-2">
-            {["Splunk", "Cloud Security", "Container Security", "CI/CD Pipeline Automation", "Kubernetes Security", "SOAR Automation"].map((skill) => (
+            {["Splunk", "Cloud Security", "Container Security", "CI / CD Pipeline Automation", "Kubernetes Security", "SOAR Automation"].map((skill) => (
               <div key={skill} className="bg-[#232323] rounded-full px-3 py-1 text-sm font-semibold text-[#00FF00] border border-[#2A2A2A] hover:border-[#00FF00] transition-all duration-300">
                 {skill}
               </div>
