@@ -100,7 +100,7 @@ export default function Home() {
           <p className="mb-4">With over 12 years of experience in cyber security including Splunk, container security, cloud security, and, CI / CD security scanning. I have assisted multiple Fortune 500 companies and government agencies increase thier security posture and bring their security posture in line with industry standards.</p>
           <h3 className="text-2xl font-semibold mb-2 text-white">Core Skills</h3>
           <div className="grid grid-cols-2 md:grid-cols-3 gap-2">
-            {["Splunk", "Cloud Security", "Container Security", "CI/CD Pipeline Automation", "Kubernetes Security", "SOAR Automation", "SOC Operations"].map((skill) => (
+            {["Splunk", "Cloud Security", "Container Security", "CI/CD Pipeline Automation", "Kubernetes Security", "SOAR Automation"].map((skill) => (
               <div key={skill} className="bg-[#232323] rounded-full px-3 py-1 text-sm font-semibold text-[#00FF00] border border-[#2A2A2A] hover:border-[#00FF00] transition-all duration-300">
                 {skill}
               </div>
