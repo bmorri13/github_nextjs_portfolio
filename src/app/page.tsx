@@ -1,9 +1,7 @@
 'use client'
 
 import { useState } from 'react'
-import { Moon, Sun, Code, Linkedin, Twitter } from 'lucide-react'
 import { Button } from "@/components/ui/button"
-import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card"
 import Image from 'next/image'
 import portfolio_image from '../../public/portfolio_image.png'
 import ProjectsSection from '@/components/ProjectsSection'
