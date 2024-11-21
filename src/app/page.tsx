@@ -94,7 +94,7 @@ export default function Home() {
               <div className="md:w-1/2 mb-8 md:mb-0">
                 <h2 className="text-5xl font-bold mb-4 text-white">Bryan Morrison</h2>
                 <p className="text-2xl mb-6 text-[#00FF00]">DevSecOps | Cloud Security | Container Security | Data Engineer | SIEM Engineer | CI / CD Automation</p>
-                <p className="text-xl mb-8">Current  on DevSecOps, Cloud Security, Container Security, Data Engineering, and expanding my knowledge around machine learning and AI.</p>
+                <p className="text-xl mb-8">Extensive background in DevSecOps, Cloud Security, Container Security, Data Engineering, and expanding my knowledge around machine learning and AI.</p>
               </div>
               <div className="md:w-1/2 flex justify-center">
                 <Image 
