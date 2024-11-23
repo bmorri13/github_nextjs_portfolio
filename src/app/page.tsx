@@ -6,6 +6,7 @@ import ProjectsSection from '@/components/ProjectsSection'
 import CurrentlyLearningSection from '@/components/CurrentlyLearningSection'
 import { Linkedin, Github, Mail } from "lucide-react";
 
+
 export default function Home() {
   const projects = [
     {
@@ -119,6 +120,7 @@ export default function Home() {
                     <Mail size={28} />
                   </a>
                 </div>
+              </div>
               <div className="md:w-1/2 flex justify-center">
                 <Image 
                   src={portfolio_image}
