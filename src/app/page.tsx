@@ -4,6 +4,9 @@ import Image from 'next/image'
 import portfolio_image from '../../public/portfolio_image.png'
 import ProjectsSection from '@/components/ProjectsSection'
 import CurrentlyLearningSection from '@/components/CurrentlyLearningSection'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faLinkedin, faSquareGithub } from '@fortawesome/free-brands-svg-icons';
+import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 
 
 export default function Home() {
@@ -95,6 +98,30 @@ export default function Home() {
                 <h2 className="text-5xl font-bold mb-4 text-white">Bryan Morrison</h2>
                 <p className="text-2xl mb-6 text-[#00FF00]">DevSecOps | Cloud Security | Container Security | Data Engineer | SIEM Engineer | CI / CD Automation</p>
                 <p className="text-xl mb-8">Extensive background in DevSecOps, Cloud Security, Container Security, Data Engineering, and expanding my knowledge around machine learning and AI.</p>
+                <div className="flex gap-4">
+                  <a
+                    href="https://www.linkedin.com/in/bryanmorrison017/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-[#00FF00] hover:text-[#00CC00] transition-all duration-300 transform hover:scale-125"
+                  >
+                    <FontAwesomeIcon icon={faLinkedin} className="h-7 w-7" />
+                  </a>
+                  <a
+                    href="https://github.com/bmorri13"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-[#00FF00] hover:text-[#00CC00] transition-all duration-300 transform hover:scale-125"
+                  >
+                    <FontAwesomeIcon icon={faSquareGithub} className="h-7 w-7" />
+                  </a>
+                  <a
+                    href="mailto:bryanmorrison017@gmail.com"
+                    className="text-[#00FF00] hover:text-[#00CC00] transition-all duration-300 transform hover:scale-125"
+                  >
+                    <FontAwesomeIcon icon={faEnvelope} className="h-7 w-7" />
+                  </a>
+                </div>
               </div>
               <div className="md:w-1/2 flex justify-center">
                 <Image 
