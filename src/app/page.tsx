@@ -77,7 +77,7 @@ export default function Home() {
       title: "Full Stack Web Development",
       items: [
         {
-          text: "Building web front ends, including this portfolio, to deepen my understanding of front-end frameworks such as Next.js, React.js, and Vite. Along with leveraging FastAPI for my backend framework use cases"
+          text: "Building web front ends, including this portfolio, to deepen my understanding of front-end frameworks such as Next.js and React. Along with leveraging FastAPI for my backend framework use cases"
         }
       ]
     }
