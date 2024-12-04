@@ -127,12 +127,12 @@ export default function Home() {
             <div className="flex flex-col md:flex-row items-center justify-between">
               <div className="md:w-1/2 mb-8 md:mb-0">
                 <h2 className="text-5xl font-bold mb-4 text-white">Bryan Morrison</h2>
-                <p className="text-2xl mb-6 text-[#00FF00]">DevSecOps | Cloud Security | Container Security | Data Engineer | SIEM Engineer | CI / CD Automation</p>
-                <p className="text-xl mb-8">Extensive background in DevSecOps, Cloud Security, Container Security, Data Engineering, and expanding my knowledge around machine learning and AI.</p>
                 <div className="flex items-center gap-2 mb-4">
                   <MapPin size={20} color="#00FF00" />
                   <span>Virginia, USA</span>
                 </div>
+                <p className="text-2xl mb-6 text-[#00FF00]">DevSecOps | Cloud Security | Container Security | Data Engineer | SIEM Engineer | CI / CD Automation</p>
+                <p className="text-xl mb-8">Extensive background in DevSecOps, Cloud Security, Container Security, Data Engineering, and expanding my knowledge around machine learning and AI.</p>
                 <div className="flex gap-6">
                   <a
                     href="https://www.linkedin.com/in/bryanmorrison017/"
