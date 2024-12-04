@@ -5,7 +5,7 @@ import portfolio_image from '../../public/portfolio_image.png'
 import ProjectsSection from '@/components/ProjectsSection'
 import CurrentlyLearningSection from '@/components/CurrentlyLearningSection'
 import { Linkedin, Github, Mail } from "lucide-react";
-
+import CertificationsSection from '@/components/CertificationsSection'
 
 export default function Home() {
   const projects = [
@@ -83,6 +83,39 @@ export default function Home() {
     }
   ];
 
+  const certifications = [
+    {
+      src: "/certs/aws_solutions_arch_assoc.png",
+      alt: "AWS Certified Solutions Architect - Associate",
+      title: "AWS Certified Solutions Architect - Associate"
+    },
+    {
+      src: "/certs/certification-splunk-enterprise-certified-architect.png",
+      alt: "Splunk Enterpirse Certfied Architect",
+      title: "Splunk Enterpirse Certfied Architect"
+    },
+    {
+      src: "/certs/certification-splunk-enterprise-security-certified-admin.png",
+      alt: "Splunk Enterprise Security Certified Admin",
+      title: "Splunk Enterprise Security Certified Admin"
+    },
+    {
+      src: "/certs/certification-splunk-enterprise-security-certified-admin.png",
+      alt: "Splunk Enterpirse Certfied Admin",
+      title: "Splunk Enterpirse Certfied Admin"
+    },
+    {
+      src: "/certs/azure-fundamentals-e1725916375391.png",
+      alt: "Microsoft Certified Azure Fundamentals",
+      title: "Microsoft Certified Azure Fundamentals"
+    },
+    {
+      src: "/certs/tines_core_cert.png",
+      alt: "Tines Core Certification",
+      title: "Tines Core Certification"
+    }
+  ];
+
 
   return (
     <div className="min-h-screen bg-[#1C1C1C]">
@@ -143,6 +176,7 @@ export default function Home() {
               </div>
             ))}
           </div>
+          <CertificationsSection certifications={certifications} />
         </section>
 
         {/* Project section using ProjectCard component to display individual projects */}
