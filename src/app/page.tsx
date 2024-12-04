@@ -4,7 +4,7 @@ import Image from 'next/image'
 import portfolio_image from '../../public/portfolio_image.png'
 import ProjectsSection from '@/components/ProjectsSection'
 import CurrentlyLearningSection from '@/components/CurrentlyLearningSection'
-import { Linkedin, Github, Mail } from "lucide-react";
+import { Linkedin, Github, Mail, MapPin } from "lucide-react";
 import CertificationsSection from '@/components/CertificationsSection'
 
 export default function Home() {
@@ -129,6 +129,10 @@ export default function Home() {
                 <h2 className="text-5xl font-bold mb-4 text-white">Bryan Morrison</h2>
                 <p className="text-2xl mb-6 text-[#00FF00]">DevSecOps | Cloud Security | Container Security | Data Engineer | SIEM Engineer | CI / CD Automation</p>
                 <p className="text-xl mb-8">Extensive background in DevSecOps, Cloud Security, Container Security, Data Engineering, and expanding my knowledge around machine learning and AI.</p>
+                <div className="flex items-center gap-2 mb-4">
+                  <MapPin size={20} color="#00FF00" />
+                  <span>Virginia, USA</span>
+                </div>
                 <div className="flex gap-6">
                   <a
                     href="https://www.linkedin.com/in/bryanmorrison017/"
