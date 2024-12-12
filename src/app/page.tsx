@@ -10,21 +10,21 @@ import CertificationsSection from '@/components/CertificationsSection'
 export default function Home() {
   const projects = [
     {
-      title: "Vector - Splunk HEC to S3 Docker Deployment",
-      description: "Setting up Splunk for enterprise-wide operations and security monitoring",
-      content: "Developed a solution utlizing Vector to receive data via Splunk HTTP Event Collector and route data to AWS S3 in a partitioned format to ingest data into an AWS S3 Data lake.",
-      url: {
-        text: "View on GitHub",
-        link: "https://github.com/bmorri13/vector_hec_to_s3_docker"
-      }
-    },
-    {
       title: "AWS Data Lake",
       description: "AWS Data Lake Leveraging S3 and supporting technologies",
       content: "Developed a data lake solution leveraging AWS services via Lake Formation to include AWS Glue, AWS Athena and, AWS Quicksight. For a breakdown of this project please visit my GitHub repo.",
       url: {
         text: "View on GitHub",
         link: "https://github.com/bmorri13/aws_s3_datalake"
+      }
+    },
+    {
+      title: "Vector - Splunk HEC to S3 Docker Deployment",
+      description: "Setting up Splunk for enterprise-wide operations and security monitoring",
+      content: "Developed a solution utlizing Vector to receive data via Splunk HTTP Event Collector and route data to AWS S3 in a partitioned format to ingest data into an AWS S3 Data lake.",
+      url: {
+        text: "View on GitHub",
+        link: "https://github.com/bmorri13/vector_hec_to_s3_docker"
       }
     }
   ];
