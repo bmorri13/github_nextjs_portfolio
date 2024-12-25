@@ -16,7 +16,7 @@ const geistMono = localFont({
 
 export const metadata: Metadata = {
   title: "Bryan Morrison - Cyber Security Engineer",
-  description: "Bryan Morrison portfolio showcasing expertise in DevSecOps, Cloud Security, and CI/CD Automation",
+  description: "Bryan Morrison portfolio showcasing expertise in Cyber Security, DevSecOps, Cloud Security Engineering, and CI/CD Automation",
   alternates: {
     canonical: 'https://www.bryanmorrison.tech'
   }
