@@ -104,8 +104,13 @@ export default function Home() {
     },
     {
       src: "/certs/certification-splunk-enterprise-security-certified-admin.png",
-      alt: "Splunk Enterpirse Certfied Admin",
-      title: "Splunk Enterpirse Certfied Admin"
+      alt: "Splunk Enterprise Security Certified Admin",
+      title: "Splunk Enterprise Security Certified Admin"
+    },
+    {
+      src: "/certs/cribl_certified_user_badge.png",
+      alt: "Cribl - Certified User Badge",
+      title: "Cribl - Certified User Badge"
     },
     {
       src: "/certs/azure-fundamentals-e1725916375391.png",
