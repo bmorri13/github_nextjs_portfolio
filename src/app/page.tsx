@@ -86,7 +86,7 @@ export default function Home() {
     }
   ];
 
-  const certifications = [
+  const certifications = [ 
     {
       src: "/certs/aws_solutions_arch_assoc.png",
       alt: "AWS Certified Solutions Architect - Associate",
@@ -109,8 +109,8 @@ export default function Home() {
     },
     {
       src: "/certs/cribl_certified_user_badge.png",
-      alt: "Cribl - Certified User Badge",
-      title: "Cribl - Certified User Badge"
+      alt: "Cribl - Certified User",
+      title: "Cribl - Certified User"
     },
     {
       src: "/certs/azure-fundamentals-e1725916375391.png",
