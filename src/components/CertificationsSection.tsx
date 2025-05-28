@@ -13,8 +13,8 @@ interface CertificationsSectionProps {
 
 export default function CertificationsSection({ certifications }: CertificationsSectionProps) {
   return (
-    <div className="mt-8">
-      <h3 className="text-2xl font-semibold mb-4 text-white">Certifications</h3>
+    <section id="certifications" className="mb-16">
+      <h2 className="text-3xl font-bold mb-6 pb-2 border-b-2 border-[#00FF00] inline-block text-white">Certifications</h2>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
         {certifications.map((cert, index) => (
           <div 
@@ -33,6 +33,6 @@ export default function CertificationsSection({ certifications }: Certifications
           </div>
         ))}
       </div>
-    </div>
+    </section>
   )
 }

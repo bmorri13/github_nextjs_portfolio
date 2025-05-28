@@ -197,11 +197,12 @@ export default function Home() {
               </div>
             ))}
           </div>
-          <CertificationsSection certifications={certifications} />
+          {/* Project section using ProjectCard component to display individual projects */}
         </section>
 
-        {/* Project section using ProjectCard component to display individual projects */}
         <ProjectsSection projects={projects} />
+        
+        <CertificationsSection certifications={certifications} />
 
         <CurrentlyLearningSection items={learningItems} />
       </main>
