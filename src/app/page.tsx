@@ -20,7 +20,7 @@ export default function Home() {
     },
     {
       title: "AWS Data Lake",
-      description: "AWS Data Lake Leveraging S3 and supporting technologies",
+      description: "AWS Data Lake leveraging S3 and supporting technologies",
       content: "Developed a data lake solution leveraging AWS services via Lake Formation to include AWS Glue, AWS Athena and, AWS Quicksight. Fully deployable via Terraform.",
       url: {
         text: "View on GitHub",
