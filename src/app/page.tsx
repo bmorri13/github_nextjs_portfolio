@@ -9,6 +9,15 @@ import CertificationsSection from '@/components/CertificationsSection'
 
 export default function Home() {
   const projects = [
+     {
+      title: "Homelab",
+      description: "Repository for my homelab projects",
+      content: "This repository contains various projects and configurations for my homelab running on Proxmox and a K3s cluster. This is leveraged heavily for learning and testing new technologies.",
+      url: {
+        text: "View on GitHub",
+        link: "https://github.com/bmorri13/homelab"
+      }
+    },
     {
       title: "AWS Data Lake",
       description: "AWS Data Lake Leveraging S3 and supporting technologies",
@@ -80,7 +89,7 @@ export default function Home() {
       title: "Full Stack Web Development",
       items: [
         {
-          text: "Building web front ends, including this portfolio, to deepen my understanding of front-end frameworks such as Next.js and React. Along with leveraging FastAPI for my backend framework use cases"
+          text: "Building web front ends, including this portfolio, to deepen my understanding of front-end frameworks such as Next.js and React. Along with leveraging FastAPI and PostgreSQL for the back-end."
         }
       ]
     }
@@ -103,9 +112,9 @@ export default function Home() {
       title: "Splunk Enterprise Security Certified Admin"
     },
     {
-      src: "/certs/certification-splunk-enterprise-security-certified-admin.png",
-      alt: "Splunk Enterprise Security Certified Admin",
-      title: "Splunk Enterprise Security Certified Admin"
+      src: "/certs/splunk-enterprise-certified-admin.png",
+      alt: "Splunk Enterprise Certified Admin",
+      title: "Splunk Enterprise Certified Admin"
     },
     {
       src: "/certs/cribl_certified_user_badge.png",
