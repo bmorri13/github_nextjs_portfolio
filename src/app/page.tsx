@@ -188,7 +188,7 @@ export default function Home() {
 
         <section id="about" className="mb-16">
           <h2 className="text-3xl font-bold mb-6 pb-2 border-b-2 border-[#00FF00] inline-block text-white">About Me</h2>
-          <p className="mb-4">Over 12 years of experience in cybersecurity, specializing in Splunk, cloud security, container security, and CI / CD security scanning. I have assisted multiple Fortune 500 companies and government agencies to increase thier security posture and bring their security posture in line with industry standards.</p>
+          <p className="mb-4">Cybersecurity professional with 12+ years of experience in Splunk, cloud security, container security, and CI/CD security scanning. I’ve partnered with Fortune 500 companies and government agencies to strengthen their security posture and ensure alignment with industry best practices.</p>
           <h3 className="text-2xl font-semibold mb-2 text-white">Core Skills</h3>
           <div className="grid grid-cols-2 md:grid-cols-3 gap-2">
             {["Splunk", "Cloud Security", "Container Security", "CI / CD Pipeline Automation", "Kubernetes Security", "SOAR Automation"].map((skill) => (
