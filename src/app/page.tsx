@@ -12,7 +12,7 @@ export default function Home() {
      {
       title: "Homelab",
       description: "Repository for my homelab projects",
-      content: "This repository contains various projects and configurations for my homelab running on Proxmox and a K3s cluster. This is leveraged heavily for learning and testing new technologies.",
+      content: "This repository contains various projects and configurations for my homelab running on Proxmox and K3s cluster. This is leveraged heavily for learning and testing new technologies.",
       url: {
         text: "View on GitHub",
         link: "https://github.com/bmorri13/homelab"
