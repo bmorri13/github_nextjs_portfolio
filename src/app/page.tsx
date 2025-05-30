@@ -4,7 +4,7 @@ import Image from 'next/image'
 import portfolio_image from '../../public/portfolio_image.png'
 import ProjectsSection from '@/components/ProjectsSection'
 import CurrentlyLearningSection from '@/components/CurrentlyLearningSection'
-import { Linkedin, Github, Mail, MapPin } from "lucide-react";
+import { Github, Mail, MapPin } from "lucide-react";
 import CertificationsSection from '@/components/CertificationsSection'
 
 export default function Home() {
