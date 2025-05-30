@@ -30,7 +30,7 @@ export default function Home() {
     {
       title: "Vector - Splunk HEC to S3 Docker Deployment",
       description: "Setting up Splunk for enterprise-wide operations and security monitoring",
-      content: "Developed a solution utlizing Vector to receive data via Splunk HTTP Event Collector and route data to AWS S3 in a partitioned format to ingest data into an AWS S3 Data lake.",
+      content: "Developed a solution utlizing Vector to receive data via Splunk HTTP Event Collector and route data to an AWS S3 bucket in a partitioned format to ingest data into an AWS S3 Data lake.",
       url: {
         text: "View on GitHub",
         link: "https://github.com/bmorri13/vector_hec_to_s3_docker"
