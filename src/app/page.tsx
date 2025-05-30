@@ -12,7 +12,7 @@ export default function Home() {
      {
       title: "Homelab",
       description: "Repository for my homelab projects",
-      content: "This repository contains various projects and configurations for my homelab running on Proxmox and K3s cluster. This is leveraged heavily for learning and testing new technologies.",
+      content: "This repository contains various projects and configurations for my homelab running on Proxmox & K3s. This is leveraged heavily for learning and testing new technologies.",
       url: {
         text: "View on GitHub",
         link: "https://github.com/bmorri13/homelab"
@@ -151,14 +151,6 @@ export default function Home() {
                 <p className="text-2xl mb-6 text-[#00FF00]">DevSecOps | Cloud Security | Container Security | Data Engineer | SIEM Engineer | CI / CD Automation</p>
                 <p className="text-xl mb-8">Extensive background in DevSecOps, Cloud Security, Container Security, Data Engineering, and expanding my knowledge around machine learning and AI.</p>
                 <div className="flex gap-6">
-                  <a
-                    href="https://www.linkedin.com/in/bryanmorrison017/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-[#00FF00] hover:text-[#00CC00] transition-all duration-300 transform hover:scale-125"
-                  >
-                    <Linkedin size={28} />
-                  </a>
                   <a
                     href="https://github.com/bmorri13"
                     target="_blank"
