@@ -1,5 +1,4 @@
 import Image from 'next/image'
-import React from 'react'
 
 interface Certification {
   src: string;
@@ -13,24 +12,30 @@ interface CertificationsSectionProps {
 
 export default function CertificationsSection({ certifications }: CertificationsSectionProps) {
   return (
-    <section id="certifications" className="mb-16">
-      <h2 className="text-3xl font-bold mb-6 pb-2 border-b-2 border-[#00FF00] inline-block text-white">Certifications</h2>
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-        {certifications.map((cert, index) => (
-          <div 
-            key={index} 
-            className={`bg-[#232323] p-2 rounded-lg border border-[#2A2A2A] hover:border-[#00FF00] transition-all duration-300
-              ${index === certifications.length - 1 && certifications.length % 2 === 1 ? "md:col-span-2 md:w-1/2 md:mx-auto" : ""}`}
+    <section id="certifications" aria-labelledby="certifications-heading" className="mb-16">
+      <h2 id="certifications-heading" className="text-3xl font-bold mb-6 pb-2 border-b-2 border-[#00FF00] inline-block text-white">
+        Certifications
+      </h2>
+      <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4" role="list" aria-label="Professional certifications">
+        {certifications.map((cert) => (
+          <article
+            key={cert.title}
+            role="listitem"
+            className="bg-[#232323] p-4 rounded-lg border border-[#2A2A2A] hover:border-[#00FF00] transition-all duration-300 hover:shadow-lg hover:shadow-[#00FF00]/5 flex flex-col items-center group"
           >
-            <Image
-              src={cert.src}
-              alt={cert.alt}
-              width={100}
-              height={100}
-              className="w-full h-auto max-w-[100px] mx-auto"
-            />
-            <p className="bg-[#232323] rounded-full px-3 py-1 text-xs font-semibold text-[#00FF00] text-center">{cert.title}</p>
-          </div>
+            <div className="relative w-20 h-20 mb-3 group-hover:scale-105 transition-transform duration-300">
+              <Image
+                src={cert.src}
+                alt=""
+                fill
+                className="object-contain"
+                sizes="80px"
+              />
+            </div>
+            <p className="text-xs font-semibold text-[#00FF00] text-center leading-tight">
+              {cert.title}
+            </p>
+          </article>
         ))}
       </div>
     </section>

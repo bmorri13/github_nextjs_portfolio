@@ -2,10 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
-  font-family: Arial, Helvetica, sans-serif;
-}
-
 @layer base {
   :root {
     --background: 0 0% 100%;
@@ -33,6 +29,12 @@ body {
     --chart-4: 43 74% 66%;
     --chart-5: 27 87% 67%;
     --radius: 0.5rem;
+
+    /* Custom theme colors */
+    --cyber-green: 120 100% 50%;
+    --cyber-green-dim: 120 100% 40%;
+    --cyber-dark: 0 0% 11%;
+    --cyber-card: 0 0% 14%;
   }
   .dark {
     --background: 0 0% 3.9%;
@@ -68,5 +70,129 @@ body {
   }
   body {
     @apply bg-background text-foreground;
+    font-family: var(--font-geist-sans), system-ui, sans-serif;
+  }
+}
+
+/* Entrance animations */
+@keyframes fade-in-up {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes glow-pulse {
+  0%, 100% {
+    box-shadow: 0 0 5px hsl(var(--cyber-green) / 0.3),
+                0 0 10px hsl(var(--cyber-green) / 0.2);
+  }
+  50% {
+    box-shadow: 0 0 10px hsl(var(--cyber-green) / 0.5),
+                0 0 20px hsl(var(--cyber-green) / 0.3);
+  }
+}
+
+@keyframes terminal-blink {
+  0%, 50% {
+    opacity: 1;
+  }
+  51%, 100% {
+    opacity: 0;
+  }
+}
+
+@keyframes slide-in-right {
+  from {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@layer utilities {
+  .animate-fade-in-up {
+    animation: fade-in-up 0.6s ease-out forwards;
+  }
+
+  .animate-fade-in {
+    animation: fade-in 0.5s ease-out forwards;
+  }
+
+  .animate-glow-pulse {
+    animation: glow-pulse 3s ease-in-out infinite;
+  }
+
+  .animate-slide-in-right {
+    animation: slide-in-right 0.5s ease-out forwards;
+  }
+
+  .animation-delay-100 {
+    animation-delay: 100ms;
+  }
+
+  .animation-delay-200 {
+    animation-delay: 200ms;
+  }
+
+  .animation-delay-300 {
+    animation-delay: 300ms;
+  }
+
+  .animation-delay-400 {
+    animation-delay: 400ms;
+  }
+
+  .animation-delay-500 {
+    animation-delay: 500ms;
+  }
+}
+
+/* Enhanced focus states for accessibility */
+@layer components {
+  .focus-ring {
+    @apply outline-none focus-visible:ring-2 focus-visible:ring-[#00FF00] focus-visible:ring-offset-2 focus-visible:ring-offset-[#1C1C1C];
+  }
+
+  /* Skip link for accessibility */
+  .skip-link {
+    @apply absolute -top-10 left-4 z-50 bg-[#00FF00] text-[#1C1C1C] px-4 py-2 font-semibold rounded transition-all;
+  }
+
+  .skip-link:focus {
+    @apply top-4;
+  }
+
+  /* Card hover enhancement */
+  .card-hover {
+    @apply transition-all duration-300 hover:border-[#00FF00]/50 hover:shadow-lg hover:shadow-[#00FF00]/10;
+  }
+
+  /* Terminal cursor effect */
+  .terminal-cursor::after {
+    content: '|';
+    animation: terminal-blink 1s step-end infinite;
+    @apply ml-1 text-[#00FF00];
+  }
+
+  /* Gradient text effect */
+  .gradient-text {
+    @apply bg-gradient-to-r from-[#00FF00] to-[#00CC88] bg-clip-text text-transparent;
   }
 }
