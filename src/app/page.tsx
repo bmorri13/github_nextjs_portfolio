@@ -4,10 +4,18 @@ import Image from 'next/image'
 import portfolio_image from '../../public/portfolio_image.png'
 import ProjectsSection from '@/components/ProjectsSection'
 import CurrentlyLearningSection from '@/components/CurrentlyLearningSection'
-import { Github, Mail, MapPin } from "lucide-react";
+import { Github, Mail, MapPin, Terminal, Shield, Cloud, Container } from "lucide-react";
 import CertificationsSection from '@/components/CertificationsSection'
 
 export default function Home() {
+  const skills = [
+    { name: "Splunk", icon: Terminal },
+    { name: "Cloud Security", icon: Cloud },
+    { name: "Container Security", icon: Container },
+    { name: "CI / CD Pipeline Automation", icon: Terminal },
+    { name: "Kubernetes Security", icon: Shield },
+    { name: "SOAR Automation", icon: Shield },
+  ];
   const projects = [
      {
       title: "Homelab",
@@ -136,68 +144,109 @@ export default function Home() {
 
   return (
     <div className="min-h-screen bg-[#1C1C1C]">
+      {/* Skip link for accessibility */}
+      <a href="#main-content" className="skip-link focus-ring">
+        Skip to main content
+      </a>
 
+      <main id="main-content" className="container mx-auto px-4 py-8 text-gray-300" role="main">
+        {/* Hero Section */}
+        <section id="home" aria-labelledby="hero-heading" className="mb-16 bg-[#232323] py-20 rounded-lg relative overflow-hidden">
+          {/* Subtle grid pattern background */}
+          <div
+            className="absolute inset-0 opacity-[0.03]"
+            style={{
+              backgroundImage: `linear-gradient(#00FF00 1px, transparent 1px), linear-gradient(90deg, #00FF00 1px, transparent 1px)`,
+              backgroundSize: '50px 50px'
+            }}
+            aria-hidden="true"
+          />
 
-      <main className="container mx-auto px-4 py-8 text-gray-300">
-        <section id="home" className="mb-16 bg-[#232323] py-20 rounded-lg">
-          <div className="container mx-auto px-4">
+          <div className="container mx-auto px-4 relative z-10">
             <div className="flex flex-col md:flex-row items-center justify-between">
               <div className="md:w-1/2 mb-8 md:mb-0">
-                <h2 className="text-5xl font-bold mb-4 text-white">Bryan Morrison</h2>
-                <div className="flex items-center gap-2 mb-4">
-                  <MapPin size={20} color="#00FF00" />
+                <h1 id="hero-heading" className="text-5xl font-bold mb-4 text-white opacity-0 animate-fade-in-up">
+                  Bryan Morrison
+                </h1>
+                <div className="flex items-center gap-2 mb-4 opacity-0 animate-fade-in-up animation-delay-100">
+                  <MapPin size={20} className="text-[#00FF00]" aria-hidden="true" />
                   <span>Virginia, USA</span>
                 </div>
-                <p className="text-2xl mb-6 text-[#00FF00]">DevSecOps | Cloud Security | Container Security | Data Engineer | SIEM Engineer | CI / CD Automation</p>
-                <p className="text-xl mb-8">Extensive background in DevSecOps, Cloud Security, Container Security, Data Engineering, and expanding my knowledge around machine learning and AI.</p>
-                <div className="flex gap-6">
+                <p className="text-2xl mb-6 text-[#00FF00] opacity-0 animate-fade-in-up animation-delay-200 font-medium">
+                  DevSecOps | Cloud Security | Container Security | Data Engineer | SIEM Engineer | CI / CD Automation
+                </p>
+                <p className="text-xl mb-8 opacity-0 animate-fade-in-up animation-delay-300 text-gray-300">
+                  Extensive background in DevSecOps, Cloud Security, Container Security, Data Engineering, and expanding my knowledge around machine learning and AI.
+                </p>
+                <nav aria-label="Social links" className="flex gap-6 opacity-0 animate-fade-in-up animation-delay-400">
                   <a
                     href="https://github.com/bmorri13"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-[#00FF00] hover:text-[#00CC00] transition-all duration-300 transform hover:scale-125"
+                    className="text-[#00FF00] hover:text-[#00CC00] transition-all duration-300 transform hover:scale-125 focus-ring rounded-full p-1"
+                    aria-label="Visit Bryan Morrison's GitHub profile (opens in new tab)"
                   >
-                    <Github size={28} />
+                    <Github size={28} aria-hidden="true" />
                   </a>
                   <a
                     href="mailto:bryanmorrison017@gmail.com"
-                    className="text-[#00FF00] hover:text-[#00CC00] transition-all duration-300 transform hover:scale-125"
+                    className="text-[#00FF00] hover:text-[#00CC00] transition-all duration-300 transform hover:scale-125 focus-ring rounded-full p-1"
+                    aria-label="Send email to Bryan Morrison"
                   >
-                    <Mail size={28} />
+                    <Mail size={28} aria-hidden="true" />
                   </a>
-                </div>
+                </nav>
               </div>
-              <div className="md:w-1/2 flex justify-center">
-                <Image 
+              <div className="md:w-1/2 flex justify-center opacity-0 animate-fade-in animation-delay-200">
+                <Image
                   src={portfolio_image}
-                  alt="Bmo image" 
-                  className="rounded-full w-64 h-64 border-4 border-[#00FF00] shadow-lg shadow-[#00FF00]/20" 
+                  alt="Bryan Morrison - Cybersecurity Professional"
+                  className="rounded-full w-64 h-64 border-4 border-[#00FF00] shadow-lg shadow-[#00FF00]/20 animate-glow-pulse"
+                  priority
                 />
               </div>
             </div>
           </div>
         </section>
 
-        <section id="about" className="mb-16">
-          <h2 className="text-3xl font-bold mb-6 pb-2 border-b-2 border-[#00FF00] inline-block text-white">About Me</h2>
-          <p className="mb-4">Cybersecurity professional with 12+ years of experience in Splunk, cloud security, container security, and CI/CD security scanning. I’ve worked for Fortune 500 companies and government agencies strengthening their security posture and ensuring alignment with industry best practices.</p>
-          <h3 className="text-2xl font-semibold mb-2 text-white">Core Skills</h3>
-          <div className="grid grid-cols-2 md:grid-cols-3 gap-2">
-            {["Splunk", "Cloud Security", "Container Security", "CI / CD Pipeline Automation", "Kubernetes Security", "SOAR Automation"].map((skill) => (
-              <div key={skill} className="bg-[#232323] rounded-full px-3 py-1 text-sm font-semibold text-[#00FF00] border border-[#2A2A2A] hover:border-[#00FF00] transition-all duration-300">
-                {skill}
-              </div>
-            ))}
+        {/* About Section */}
+        <section id="about" aria-labelledby="about-heading" className="mb-16 opacity-0 animate-fade-in-up animation-delay-300">
+          <h2 id="about-heading" className="text-3xl font-bold mb-6 pb-2 border-b-2 border-[#00FF00] inline-block text-white">
+            About Me
+          </h2>
+          <p className="mb-6 text-lg leading-relaxed">
+            Cybersecurity professional with 12+ years of experience in Splunk, cloud security, container security, and CI/CD security scanning. I&apos;ve worked for Fortune 500 companies and government agencies strengthening their security posture and ensuring alignment with industry best practices.
+          </p>
+          <h3 className="text-2xl font-semibold mb-4 text-white">Core Skills</h3>
+          <div className="grid grid-cols-2 md:grid-cols-3 gap-3" role="list" aria-label="Core skills">
+            {skills.map((skill, index) => {
+              const IconComponent = skill.icon;
+              return (
+                <div
+                  key={skill.name}
+                  role="listitem"
+                  className="bg-[#232323] rounded-lg px-4 py-3 text-sm font-semibold text-[#00FF00] border border-[#2A2A2A] hover:border-[#00FF00] transition-all duration-300 flex items-center gap-2 opacity-0 animate-slide-in-right"
+                  style={{ animationDelay: `${400 + index * 100}ms` }}
+                >
+                  <IconComponent size={16} aria-hidden="true" className="text-[#00FF00]/70" />
+                  {skill.name}
+                </div>
+              );
+            })}
           </div>
-          {/* Project section using ProjectCard component to display individual projects */}
         </section>
 
         <ProjectsSection projects={projects} />
-        
+
         <CertificationsSection certifications={certifications} />
 
         <CurrentlyLearningSection items={learningItems} />
       </main>
+
+      {/* Footer */}
+      <footer className="border-t border-[#2A2A2A] py-6 text-center text-gray-500 text-sm">
+        <p>&copy; {new Date().getFullYear()} Bryan Morrison. Built with Next.js and TailwindCSS.</p>
+      </footer>
     </div>
   )
 }
