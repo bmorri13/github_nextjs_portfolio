@@ -13,7 +13,7 @@ interface CertificationsSectionProps {
 export default function CertificationsSection({ certifications }: CertificationsSectionProps) {
   return (
     <section id="certifications" aria-labelledby="certifications-heading" className="mb-16">
-      <h2 id="certifications-heading" className="text-3xl font-bold mb-6 pb-2 border-b-2 border-[#00FF00] inline-block text-white">
+      <h2 id="certifications-heading" className="text-3xl font-bold mb-6 pb-2 border-b-2 border-[hsl(var(--cyber-green))] inline-block text-white">
         Certifications
       </h2>
       <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4" role="list" aria-label="Professional certifications">
@@ -21,7 +21,7 @@ export default function CertificationsSection({ certifications }: Certifications
           <article
             key={cert.title}
             role="listitem"
-            className="bg-[#232323] p-4 rounded-lg border border-[#2A2A2A] hover:border-[#00FF00] transition-all duration-300 hover:shadow-lg hover:shadow-[#00FF00]/5 flex flex-col items-center group"
+            className="cyber-card-bg p-4 rounded-lg border cyber-border hover:border-[hsl(var(--cyber-green))] transition-all duration-300 hover:shadow-lg hover:shadow-[hsl(var(--cyber-green)/0.05)] flex flex-col items-center group"
           >
             <div className="relative w-20 h-20 mb-3 group-hover:scale-105 transition-transform duration-300">
               <Image
@@ -32,7 +32,7 @@ export default function CertificationsSection({ certifications }: Certifications
                 sizes="80px"
               />
             </div>
-            <p className="text-xs font-semibold text-[#00FF00] text-center leading-tight">
+            <p className="text-xs font-semibold cyber-text text-center leading-tight">
               {cert.title}
             </p>
           </article>

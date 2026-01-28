@@ -33,8 +33,14 @@
     /* Custom theme colors */
     --cyber-green: 120 100% 50%;
     --cyber-green-dim: 120 100% 40%;
+    --cyber-green-hover: 120 100% 45%;
     --cyber-dark: 0 0% 11%;
+    --cyber-dark-bg: #1C1C1C;
     --cyber-card: 0 0% 14%;
+    --cyber-card-bg: #232323;
+    --cyber-border: #2A2A2A;
+    --cyber-text: #d1d5db;
+    --cyber-text-muted: #9ca3af;
   }
   .dark {
     --background: 0 0% 3.9%;
@@ -167,12 +173,16 @@
 /* Enhanced focus states for accessibility */
 @layer components {
   .focus-ring {
-    @apply outline-none focus-visible:ring-2 focus-visible:ring-[#00FF00] focus-visible:ring-offset-2 focus-visible:ring-offset-[#1C1C1C];
+    @apply outline-none focus-visible:ring-2 focus-visible:ring-offset-2;
+    --tw-ring-color: hsl(var(--cyber-green));
+    --tw-ring-offset-color: var(--cyber-dark-bg);
   }
 
   /* Skip link for accessibility */
   .skip-link {
-    @apply absolute -top-10 left-4 z-50 bg-[#00FF00] text-[#1C1C1C] px-4 py-2 font-semibold rounded transition-all;
+    @apply absolute -top-10 left-4 z-50 px-4 py-2 font-semibold rounded transition-all;
+    background-color: hsl(var(--cyber-green));
+    color: var(--cyber-dark-bg);
   }
 
   .skip-link:focus {
@@ -181,18 +191,70 @@
 
   /* Card hover enhancement */
   .card-hover {
-    @apply transition-all duration-300 hover:border-[#00FF00]/50 hover:shadow-lg hover:shadow-[#00FF00]/10;
+    @apply transition-all duration-300 hover:shadow-lg;
+    --tw-shadow-color: hsl(var(--cyber-green) / 0.1);
+  }
+
+  .card-hover:hover {
+    border-color: hsl(var(--cyber-green) / 0.5);
   }
 
   /* Terminal cursor effect */
   .terminal-cursor::after {
     content: '|';
     animation: terminal-blink 1s step-end infinite;
-    @apply ml-1 text-[#00FF00];
+    @apply ml-1;
+    color: hsl(var(--cyber-green));
   }
 
   /* Gradient text effect */
   .gradient-text {
-    @apply bg-gradient-to-r from-[#00FF00] to-[#00CC88] bg-clip-text text-transparent;
+    @apply bg-clip-text text-transparent;
+    background-image: linear-gradient(to right, hsl(var(--cyber-green)), hsl(160, 100%, 40%));
+  }
+
+  /* Cyber theme utility classes */
+  .cyber-bg {
+    background-color: var(--cyber-dark-bg);
+  }
+
+  .cyber-card-bg {
+    background-color: var(--cyber-card-bg);
+  }
+
+  .cyber-border {
+    border-color: var(--cyber-border);
+  }
+
+  .cyber-text {
+    color: hsl(var(--cyber-green));
+  }
+
+  .cyber-text-hover:hover {
+    color: hsl(var(--cyber-green-hover));
+  }
+}
+
+/* Respect user preference for reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+
+  .animate-fade-in-up,
+  .animate-fade-in,
+  .animate-slide-in-right {
+    opacity: 1 !important;
+    transform: none !important;
+  }
+
+  .animate-glow-pulse {
+    animation: none !important;
+    box-shadow: 0 0 10px hsl(var(--cyber-green) / 0.3);
   }
 }

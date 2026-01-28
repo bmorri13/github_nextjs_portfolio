@@ -21,16 +21,16 @@ interface CurrentlyLearningSectionProps {
 export default function CurrentlyLearningSection({ items }: CurrentlyLearningSectionProps) {
   return (
     <section id="currentlyLearning" aria-labelledby="learning-heading" className="mb-16">
-      <h2 id="learning-heading" className="text-3xl font-bold mb-6 pb-2 border-b-2 border-[#00FF00] inline-block text-white">
+      <h2 id="learning-heading" className="text-3xl font-bold mb-6 pb-2 border-b-2 border-[hsl(var(--cyber-green))] inline-block text-white">
         Currently Learning
       </h2>
       <div className="space-y-6">
         {items.map((item) => (
-          <Card key={item.title} className="bg-[#232323] border-[#2A2A2A] hover:border-[#00FF00]/50 transition-all duration-300 hover:shadow-lg hover:shadow-[#00FF00]/5">
+          <Card key={item.title} className="cyber-card-bg cyber-border hover:border-[hsl(var(--cyber-green)/0.5)] transition-all duration-300 hover:shadow-lg hover:shadow-[hsl(var(--cyber-green)/0.05)]">
             <CardHeader>
               <CardTitle className="text-white">{item.title}</CardTitle>
             </CardHeader>
-            <CardContent className="text-gray-300">
+            <CardContent className="text-[--cyber-text]">
               <ul className="list-disc pl-5 space-y-2">
                 {item.items.map((listItem, itemIndex) => (
                   <li key={itemIndex}>
@@ -41,7 +41,7 @@ export default function CurrentlyLearningSection({ items }: CurrentlyLearningSec
                           href={listItem.link.url}
                           target="_blank"
                           rel="noopener noreferrer"
-                          className="text-[#00FF00] hover:text-[#00CC00] hover:underline focus-ring rounded inline-flex items-center gap-1"
+                          className="cyber-text cyber-text-hover hover:underline focus-ring rounded inline-flex items-center gap-1"
                           aria-label={`${listItem.link.title} (opens in new tab)`}
                         >
                           {listItem.link.title}

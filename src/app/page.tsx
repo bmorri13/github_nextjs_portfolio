@@ -143,15 +143,15 @@ export default function Home() {
 
 
   return (
-    <div className="min-h-screen bg-[#1C1C1C]">
+    <div className="min-h-screen cyber-bg">
       {/* Skip link for accessibility */}
       <a href="#main-content" className="skip-link focus-ring">
         Skip to main content
       </a>
 
-      <main id="main-content" className="container mx-auto px-4 py-8 text-gray-300" role="main">
+      <main id="main-content" className="container mx-auto px-4 py-8 text-[--cyber-text]" role="main">
         {/* Hero Section */}
-        <section id="home" aria-labelledby="hero-heading" className="mb-16 bg-[#232323] py-20 rounded-lg relative overflow-hidden">
+        <section id="home" aria-labelledby="hero-heading" className="mb-16 cyber-card-bg py-20 rounded-lg relative overflow-hidden">
           {/* Subtle grid pattern background */}
           <div
             className="absolute inset-0 opacity-[0.03]"
@@ -225,10 +225,10 @@ export default function Home() {
                 <div
                   key={skill.name}
                   role="listitem"
-                  className="bg-[#232323] rounded-lg px-4 py-3 text-sm font-semibold text-[#00FF00] border border-[#2A2A2A] hover:border-[#00FF00] transition-all duration-300 flex items-center gap-2 opacity-0 animate-slide-in-right"
+                  className="cyber-card-bg rounded-lg px-4 py-3 text-sm font-semibold cyber-text border cyber-border hover:border-[hsl(var(--cyber-green))] transition-all duration-300 flex items-center gap-2 opacity-0 animate-slide-in-right"
                   style={{ animationDelay: `${400 + index * 100}ms` }}
                 >
-                  <IconComponent size={16} aria-hidden="true" className="text-[#00FF00]/70" />
+                  <IconComponent size={16} aria-hidden="true" className="opacity-70" />
                   {skill.name}
                 </div>
               );
@@ -244,8 +244,8 @@ export default function Home() {
       </main>
 
       {/* Footer */}
-      <footer className="border-t border-[#2A2A2A] py-6 text-center text-gray-500 text-sm">
-        <p>&copy; {new Date().getFullYear()} Bryan Morrison. Built with Next.js and TailwindCSS.</p>
+      <footer className="border-t cyber-border py-6 text-center text-[--cyber-text-muted] text-sm">
+        <p>&copy; 2025 Bryan Morrison. Built with Next.js and TailwindCSS.</p>
       </footer>
     </div>
   )
