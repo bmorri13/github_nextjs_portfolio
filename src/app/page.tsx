@@ -3,7 +3,6 @@
 import Image from 'next/image'
 import portfolio_image from '../../public/portfolio_image.png'
 import ProjectsSection from '@/components/ProjectsSection'
-import CurrentlyLearningSection from '@/components/CurrentlyLearningSection'
 import { Github, Mail, MapPin, Terminal, Shield, Cloud, Container } from "lucide-react";
 import CertificationsSection from '@/components/CertificationsSection'
 
@@ -43,63 +42,15 @@ export default function Home() {
         text: "View on GitHub",
         link: "https://github.com/bmorri13/vector_hec_to_s3_docker"
       }
-    }
-  ];
-
-  const learningItems = [
-    {
-      title: "Machine Learning",
-      items: [
-        {
-          text: "Reading through:",
-          link: {
-            url: "https://www.amazon.com/dp/1098125975?ref=ppx_yo2ov_dt_b_fed_asin_title",
-            title: "Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow: Concepts, Tools, and Techniques to Build Intelligent Systems - 3rd Edition"
-          }
-        },
-        {
-          text: "Yet to Start:",
-          link: {
-            url: "https://www.amazon.com/dp/1098107969?ref=ppx_yo2ov_dt_b_fed_asin_title",
-            title: "Designing Machine Learning Systems: An Iterative Process for Production-Ready Applications - 1st Edition"
-          }
-        },
-        {
-          text: "Yet to Start:",
-          link: {
-            url: "https://www.amazon.com/dp/1098150961?ref=ppx_yo2ov_dt_b_fed_asin_title",
-            title: "Hands-On Large Language Models: Language Understanding and Generation - 1st Edition"
-          }
-        }
-      ]
     },
     {
-      title: "Cyber Security",
-      items: [
-        {
-          text: "Try Hack Me:",
-          link: {
-            url: "https://tryhackme.com/r/path/outline/webapppentesting?utm_source=cio&utm_medium=email&utm_campaign=webapppen_b2c",
-            title: "Web Application Pentesting Path"
-          }
-        }
-      ]  
-    },
-    {
-      title: "LLM Rag Implementations",
-      items: [
-        {
-          text: "Testing out developing solutions with LLM's for RAG integration leveraging AWS Bedrock and enriching the LLM knowledge base with data from S3"
-        }
-      ]
-    },
-    {
-      title: "Full Stack Web Development",
-      items: [
-        {
-          text: "Building web front ends, including this portfolio, to deepen my understanding of front-end frameworks such as Next.js and React. Along with leveraging FastAPI and PostgreSQL for the back-end."
-        }
-      ]
+      title: "Daily News App",
+      description: "AI-powered news aggregator using Claude AI to curate daily digests",
+      content: "AI-powered news aggregator using Claude AI to curate daily digests from 20+ RSS feeds across Cyber Security, AI, Cloud, and Crypto. Built with FastAPI, Next.js 16, PostgreSQL, and Docker.",
+      url: {
+        text: "View on GitHub",
+        link: "https://github.com/bmorri13/daily_news_app"
+      }
     }
   ];
 
@@ -239,8 +190,6 @@ export default function Home() {
         <ProjectsSection projects={projects} />
 
         <CertificationsSection certifications={certifications} />
-
-        <CurrentlyLearningSection items={learningItems} />
       </main>
 
       {/* Footer */}
