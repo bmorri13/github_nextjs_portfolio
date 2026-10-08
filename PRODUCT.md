@@ -10,22 +10,22 @@ web
 
 Three audiences, weighted roughly equally:
 
-- **Recruiters and hiring managers** evaluating Bryan for a security engineering role. They skim quickly and need credibility (experience, certifications, real work) within seconds.
-- **Prospective consulting clients** deciding whether Bryan can solve a specific security or data problem for them.
-- **Peers and the security community** who arrive through GitHub or projects and want to see what he builds.
+- **Recruiters and hiring managers** evaluating Bryan for a security engineering role. Recruiters skim quickly and need credibility (experience, certifications, real work) within seconds.
+- **Prospective consulting clients** deciding whether Bryan can solve a specific security or data problem.
+- **Peers and the security community** who arrive through GitHub or projects and want to see what Bryan builds.
 
 ## Product Purpose
 
-A single-page personal portfolio for Bryan Morrison, a cybersecurity professional based in Virginia, USA. It establishes credibility and turns that into one of two equally valued actions: **emailing Bryan** or **exploring his GitHub projects**.
+A single-page personal portfolio for Bryan Morrison, a cybersecurity professional based in Virginia, USA. It establishes credibility and turns that into one of two equally valued actions: **emailing Bryan** or **exploring Bryan's GitHub projects**.
 
 ## Positioning
 
-**Breadth across the security stack, combined with a builder mindset.** Bryan covers SIEM (Splunk), cloud security, container and Kubernetes security, CI/CD security, and data engineering in one person, and he builds working tooling and automation (SOAR, data pipelines, a homelab, an AI news app) rather than only operating products.
+**Breadth across the security stack, combined with a builder mindset.** Bryan covers SIEM (Splunk), cloud security, container and Kubernetes security, CI/CD security, data engineering, and AI agent development in one person, and builds working tooling and automation (SOAR, data pipelines, a homelab, AI agents, MCP integrations, agent skills) rather than only operating products. Security-aware AI work, such as proving MCP tool calls respect Splunk RBAC, sits where both halves meet.
 
 ## Operating Context
 
 - Visitors usually come from a résumé, LinkedIn, GitHub, or a direct link, often on a phone.
-- Their next steps happen outside the site: email (`bryanmorrison017@gmail.com`) or GitHub (`github.com/bmorri13`).
+- Next steps happen outside the site: email (`bryanmorrison017@gmail.com`) or GitHub (`github.com/bmorri13`).
 - Primary domain: `https://www.bryanmorrison.tech`.
 
 ## Capabilities and Constraints
@@ -44,8 +44,13 @@ A single-page personal portfolio for Bryan Morrison, a cybersecurity professiona
 
 - **Experience:** 12+ years in cybersecurity (Splunk, cloud security, container security, CI/CD security scanning), working for Fortune 500 companies and government agencies.
 - **Certifications** (badge images in `public/certs/`): Splunk Enterprise Certified Architect, Splunk Enterprise Security Certified Admin, Splunk Enterprise Certified Admin, AWS Certified Solutions Architect – Associate, Microsoft Certified: Azure Fundamentals, Cribl Certified User, Tines Core Certification.
-- **Projects** (public GitHub repos): Daily News App, Homelab, AWS Data Lake, Vector: Splunk HEC to S3.
-- **Image:** `public/portfolio_image.png`, an isometric server illustration and not a photo of Bryan.
+- **Projects shown on the site** (public GitHub repos): Daily News App (live at https://news.bmosan.com/), Splunk MCP RBAC Test Environment, Homelab, AWS Data Lake, Vector: Splunk HEC to S3.
+- **Further AI work** (public repos, not all shown on the site):
+  - `bmorri13/youtube_summarizer_agent_core`: agent on the Claude Agent SDK, deployed on AWS Bedrock AgentCore and Lambda.
+  - `bmorri13/splunk_mcp_bots_demo`, `bmorri13/docker_mcp_gateway`: Splunk MCP server with VS Code Copilot, and a self-hosted MCP gateway.
+  - `bmorri13/bmosan-skills`: Claude Code plugin marketplace of agent skills.
+  - `cointhieves/opencode-graph`, `cointhieves/opencode-memory`, `cointhieves/skill-builder`, `cointhieves/opencode-rules`: multi-agent orchestration, persistent agent memory, a skill for authoring skills, and coding-agent rules. The `cointhieves` organization is Bryan's own work.
+- **Image:** `public/portfolio_image.webp`, an isometric server illustration and not a photo of Bryan.
 - **Absent, so never fabricate:** testimonials, named employers or clients, metrics or outcomes from past roles, a blog or writing, speaking engagements, a résumé download.
 
 ## Product Principles

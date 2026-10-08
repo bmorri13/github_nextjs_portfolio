@@ -22,7 +22,7 @@ export const viewport: Viewport = {
 export const metadata: Metadata = {
   title: "Bryan Morrison - Cyber Security Engineer",
   description: "Bryan Morrison portfolio showcasing expertise in Cyber Security, DevSecOps, Cloud Security Engineering, and CI/CD Automation",
-  keywords: ["Cybersecurity", "DevSecOps", "Cloud Security", "Splunk", "Container Security", "CI/CD", "Security Engineer"],
+  keywords: ["Cybersecurity", "DevSecOps", "Cloud Security", "Splunk", "Container Security", "CI/CD", "Security Engineer", "AI Agents", "MCP"],
   authors: [{ name: "Bryan Morrison" }],
   creator: "Bryan Morrison",
   metadataBase: new URL('https://www.bryanmorrison.tech'),
@@ -68,6 +68,9 @@ const jsonLd = {
     'Kubernetes Security',
     'CI/CD Automation',
     'SOAR',
+    'AI Agents',
+    'Model Context Protocol (MCP)',
+    'LLM Application Development',
   ],
 };
 

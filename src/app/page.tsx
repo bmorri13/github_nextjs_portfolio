@@ -15,6 +15,7 @@ export default function Home() {
     "Data Engineering",
     "SIEM Engineering",
     "CI / CD Automation",
+    "AI Agents & MCP",
   ];
 
   const skills = [
@@ -24,6 +25,10 @@ export default function Home() {
     "Kubernetes Security",
     "CI / CD Pipeline Automation",
     "SOAR Automation",
+    "AI Agent Development",
+    "MCP Integration & Security",
+    "Agent Skills & Plugins",
+    "LLM App Development",
   ];
 
   const projects = [
@@ -36,6 +41,16 @@ export default function Home() {
       url: {
         text: "View on GitHub",
         link: "https://github.com/bmorri13/daily_news_app"
+      }
+    },
+    {
+      title: "Splunk MCP RBAC Test Environment",
+      description: "Proving AI agent tool calls respect Splunk RBAC.",
+      content: "Disposable Splunk Enterprise environment with the official Splunk MCP Server, RBAC-restricted test users, and a Claude-driven LangGraph agent plus an automated test matrix that proves MCP tool calls run in the calling user's security context.",
+      stack: ["Splunk MCP Server", "LangGraph", "Claude", "Python", "Docker"],
+      url: {
+        text: "View on GitHub",
+        link: "https://github.com/bmorri13/splunk_mcp_rbac_demo"
       }
     },
     {
@@ -175,7 +190,7 @@ export default function Home() {
               </p>
 
               <p className="mt-5 max-w-[58ch] text-base leading-relaxed text-fg-2 sm:text-lg">
-                Extensive background in DevSecOps, Cloud Security, Container Security, and Data Engineering, and expanding my knowledge around machine learning and AI.
+                Extensive background in DevSecOps, Cloud Security, Container Security, and Data Engineering, now building AI agents, MCP integrations, and LLM-powered tools.
               </p>
 
               <ul className="mt-8 flex flex-wrap gap-x-4 gap-y-2 text-sm text-fg-3" aria-label="Focus areas">
