@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import portfolio_image from '../../public/portfolio_image.png'
+import portfolio_image from '../../public/portfolio_image.webp'
 import ProjectsSection from '@/components/ProjectsSection'
 import CertificationsSection from '@/components/CertificationsSection'
 import { ArrowUpRight, Github, Mail, MapPin } from "lucide-react";
@@ -267,10 +267,10 @@ export default function Home() {
             </p>
             <a
               href={`mailto:${EMAIL}`}
-              className="focus-ring group mt-10 inline-flex items-center gap-3 rounded-sm text-xl font-medium text-signal sm:text-2xl"
+              className="focus-ring group mt-10 inline-flex max-w-full items-center gap-3 rounded-sm text-lg font-medium text-signal min-[400px]:text-xl sm:text-2xl"
             >
-              <span className="underline decoration-signal/40 underline-offset-[0.3em] transition-colors group-hover:decoration-signal">
-                {EMAIL}
+              <span className="min-w-0 underline decoration-signal/40 underline-offset-[0.3em] transition-colors group-hover:decoration-signal">
+                {EMAIL.split("@")[0]}<wbr />@{EMAIL.split("@")[1]}
               </span>
               <ArrowUpRight
                 size={24}
