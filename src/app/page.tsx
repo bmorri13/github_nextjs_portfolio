@@ -261,10 +261,10 @@ export default function Home() {
               id="contact-heading"
               className="max-w-[16ch] text-[clamp(2.25rem,6vw,4.5rem)] font-semibold leading-[1] tracking-[-0.04em] text-fg"
             >
-              Securing something interesting?
+              Get in touch
             </h2>
             <p className="mt-6 max-w-[52ch] text-lg text-fg-2">
-              I&apos;m always happy to talk detection engineering, cloud security, or homelab builds.
+              If you&apos;d like to connect, feel free to reach out.
             </p>
             <a
               href={`mailto:${EMAIL}`}
