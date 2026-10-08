@@ -158,7 +158,7 @@ A restrained palette: tinted neutrals carry the page and one saturated green car
 
 ### Hierarchy
 - **Display** (`typography.display`): The name in the hero, and nowhere else.
-- **Headline** (`typography.headline`): The closing contact question.
+- **Headline** (`typography.headline`): The closing contact heading.
 - **Title** (`typography.title`): Section headings (About, Projects, Certifications). They are 30px on mobile and grow to the token size from the `md` breakpoint.
 - **Subtitle** (`typography.subtitle`): Project names. They are 20px on mobile and grow to the token size from `sm`.
 - **Body** (`typography.body`): Paragraphs, which measure 58–65ch at most. Supporting copy steps down to 16px in Text, tertiary.
