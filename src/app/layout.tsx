@@ -15,7 +15,7 @@ const geistMono = localFont({
 });
 
 export const viewport: Viewport = {
-  themeColor: '#1C1C1C',
+  themeColor: '#0b0f0c',
   colorScheme: 'dark',
 };
 
@@ -88,11 +88,6 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <noscript>
-          <div style={{ padding: '2rem', textAlign: 'center', backgroundColor: '#1C1C1C', color: '#00FF00' }}>
-            Please enable JavaScript to view this portfolio site.
-          </div>
-        </noscript>
         {children}
       </body>
     </html>

@@ -11,6 +11,24 @@ const config: Config = {
   theme: {
   	extend: {
   		colors: {
+  			ink: {
+  				DEFAULT: 'var(--ink)',
+  				raised: 'var(--ink-raised)'
+  			},
+  			line: {
+  				DEFAULT: 'var(--line)',
+  				strong: 'var(--line-strong)'
+  			},
+  			fg: {
+  				DEFAULT: 'var(--fg)',
+  				'2': 'var(--fg-2)',
+  				'3': 'var(--fg-3)'
+  			},
+  			signal: {
+  				DEFAULT: 'var(--signal)',
+  				dim: 'var(--signal-dim)',
+  				ink: 'var(--signal-ink)'
+  			},
   			background: 'hsl(var(--background))',
   			foreground: 'hsl(var(--foreground))',
   			card: {
@@ -51,6 +69,10 @@ const config: Config = {
   				'4': 'hsl(var(--chart-4))',
   				'5': 'hsl(var(--chart-5))'
   			}
+  		},
+  		fontFamily: {
+  			sans: ['var(--font-geist-sans)', 'system-ui', 'sans-serif'],
+  			mono: ['var(--font-geist-mono)', 'ui-monospace', 'monospace']
   		},
   		borderRadius: {
   			lg: 'var(--radius)',
