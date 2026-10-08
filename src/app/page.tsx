@@ -32,6 +32,7 @@ export default function Home() {
       description: "Claude-curated daily digests from 20+ RSS feeds.",
       content: "AI-powered news aggregator using Claude AI to curate daily digests from 20+ RSS feeds across Cyber Security, AI, Cloud, and Crypto.",
       stack: ["Claude AI", "FastAPI", "Next.js 16", "PostgreSQL", "Docker"],
+      live: "https://news.bmosan.com/",
       url: {
         text: "View on GitHub",
         link: "https://github.com/bmorri13/daily_news_app"
