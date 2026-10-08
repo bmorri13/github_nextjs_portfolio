@@ -5,6 +5,7 @@ interface Project {
   description: string;
   content: string;
   stack?: string[];
+  live?: string;
   url?: {
     text: string;
     link: string;

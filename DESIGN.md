@@ -56,7 +56,6 @@ typography:
 rounded:
   xs: "4px"
   sm: "6px"
-  md: "8px"
   lg: "16px"
   full: "9999px"
 spacing:
@@ -94,10 +93,16 @@ components:
     typography: "{typography.mono}"
     rounded: "{rounded.xs}"
     padding: "2px 8px"
-  project-row-hover:
-    backgroundColor: "{colors.console-ink-raised}"
-    rounded: "{rounded.md}"
-    padding: "32px 16px"
+  project-link-live:
+    textColor: "{colors.phosphor-signal}"
+    typography: "{typography.label}"
+    padding: "6px 0"
+  project-link-repo:
+    textColor: "{colors.text-secondary}"
+    typography: "{typography.label}"
+    padding: "6px 0"
+  project-link-repo-hover:
+    textColor: "{colors.text-primary}"
 ---
 
 # Design System: Bryan Morrison Portfolio
@@ -131,7 +136,7 @@ A restrained palette: tinted neutrals carry the page and one saturated green car
 
 ### Neutral
 - **Console Ink** (`console-ink`): The page ground everywhere, and the browser theme color.
-- **Console Ink, raised** (`console-ink-raised`): Raised surfaces: the hero image frame and the project-row hover fill.
+- **Console Ink, raised** (`console-ink-raised`): Raised surfaces, currently the hero image frame.
 - **Hairline** (`hairline`): Section dividers, list rules, and tech-tag outlines.
 - **Hairline, strong** (`hairline-strong`): Borders around interactive outlines (secondary button, Contact link, image frame) and the scrollbar thumb.
 - **Text, primary** (`text-primary`): Headings, list item names, and emphasized phrases inside body copy.
@@ -176,7 +181,7 @@ A restrained palette: tinted neutrals carry the page and one saturated green car
 
 ## Elevation & Depth
 
-The system is flat at rest, and depth is conveyed by tonal layering: Console Ink, then Console Ink raised, then hairlines. There is one true shadow, under the hero image frame, which is soft and offset downward like a real object. Hover states lift with a tonal fill, not a shadow.
+The system is flat at rest, and depth is conveyed by tonal layering: Console Ink, then Console Ink raised, then hairlines. There is one true shadow, under the hero image frame, which is soft and offset downward like a real object. Hover states change color or underline weight, never add a shadow.
 
 ### Shadow Vocabulary
 - **Hero lift** (`0 30px 60px -20px rgba(0,0,0,0.7), 0 12px 24px -12px rgba(0,0,0,0.5)`): The hero image frame only.
@@ -189,7 +194,6 @@ The system is flat at rest, and depth is conveyed by tonal layering: Console Ink
 Corners are gently rounded and rarely seen, because most structure is open and ruled rather than boxed:
 - 4px (`rounded.xs`) on tech tags
 - 6px (`rounded.sm`) on buttons, nav links and the skip link
-- 8px (`rounded.md`) on project-row hover fills
 - 16px (`rounded.lg`) on the hero image frame only
 - Fully round (`rounded.full`) on list-bullet dots
 
@@ -216,7 +220,10 @@ The system's replacement for cards, used for skills, projects, and certification
 
 ### Project Row
 - **Content:** a project name with a one-line summary, a muted body paragraph, then mono tech tags.
-- **Interaction:** the whole row is one link. On hover it fills with Console Ink, raised at 8px radius, the title turns Phosphor Signal, and the arrow nudges up and right over 300ms.
+- **Links:** a row of up to two underlined text links below the tags, each at least 24px tall.
+  - **Live site:** in Phosphor Signal with an up-right arrow that nudges up and right over 300ms on hover. It comes first and only appears when the project has a public deployment.
+  - **GitHub:** a GitHub icon and a label in Text, secondary that brightens to Text, primary on hover.
+- **Interaction:** the row itself is not a link, so each destination is its own focusable link.
 
 ### Tech Tag
 - **Style:** a 1px Hairline outline at 4px radius, with 12px Geist Mono text in Text, secondary and 2px × 8px padding. Tags are static labels and never interactive.
