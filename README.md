@@ -12,10 +12,10 @@
     ```bash
     npx create-next-app@latest github_portfolio
     ```
-    - Install shadcn and lucide-react
+    - Install lucide-react (the shadcn CLI runs through `npx` and is not a project dependency)
     > NOTE: The import of packages may vary for your sites requirements
     ```bash
-    npm install shadcn lucide-react
+    npm install lucide-react
     ```
 
 - Once the site is up and running, import your v0 design by cliking at the top right `Add to Codebase`
